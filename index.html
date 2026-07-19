@@ -4,340 +4,355 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Second Innings — Every Innings Deserves a Second Chance</title>
+<meta name="description" content="Second Innings connects elders from old age homes with people who want to learn their craft — cooking, tailoring, music, tuition, storytelling, language, gardening and crafts.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-  
 </head>
 <body>
 
-<!-- ===== HEADER ===== -->
+<!-- ============ NAV ============ -->
 <header class="site-header">
   <div class="header-inner">
-    <a href="#home" class="logo" data-nav="home">
-      <span class="logo-mark">SI</span>
-      <span class="logo-text">Second Innings</span>
+    <a href="#home" class="brand" data-nav>
+      <span class="brand-mark">SI</span>
+      <span class="brand-name">Second Innings</span>
     </a>
-    <nav class="main-nav">
-      <a href="#home" data-nav="home">Home</a>
-      <a href="#explore" data-nav="explore">Mentors</a>
-      <a href="#register" data-nav="register">Register a Home</a>
-      <a href="#about" data-nav="about">About</a>
-      <a href="#contact" data-nav="contact">Contact</a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="#home" class="nav-link" data-nav data-route="home">Home</a>
+      <a href="#explore" class="nav-link" data-nav data-route="explore">The Squad</a>
+      <a href="#register" class="nav-link" data-nav data-route="register">Register a Home</a>
+      <a href="#about" class="nav-link" data-nav data-route="about">About</a>
+      <a href="#contact" class="nav-link" data-nav data-route="contact">Contact</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
 
-<main>
+<main id="app">
 
-<!-- ===== HOME / HERO ===== -->
-<section id="home" class="view active-view">
+  <!-- ============ HOME ============ -->
+  <section class="page" id="page-home" data-page="home">
 
-  <section class="hero">
-    <div class="hero-inner">
-      <p class="eyebrow">A skill exchange, not a charity drive</p>
-      <h1 class="hero-title">Every Innings<br>Deserves a<br><span class="hero-accent">Second Chance.</span></h1>
-      <p class="hero-sub">Second Innings connects skilled elders living in old age homes with people who want to learn — pickle-making, Carnatic music, tailoring, Tamil tuition, storytelling and more. They're not looking for sympathy. They're looking for students.</p>
-      <div class="hero-cta">
-        <a href="#explore" class="btn btn-primary" data-nav="explore">Explore Mentors</a>
-        <a href="#register" class="btn btn-outline" data-nav="register">Register an Old Age Home</a>
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Not charity. Craft.</p>
+        <h1 class="hero-title">Every Innings Deserves<br>a Second Chance.</h1>
+        <p class="hero-sub">Second Innings connects elders from old age homes across Tamil Nadu with people ready to learn what they know — cooking, tailoring, music, tuition, storytelling, language, gardening, crafts. Decades of skill, still in play.</p>
+        <div class="hero-ctas">
+          <a href="#explore" class="btn btn-primary" data-nav>Meet the Squad</a>
+          <a href="#register" class="btn btn-ghost" data-nav>Register a Home</a>
+        </div>
       </div>
+
+      <div class="scoreboard" id="scoreboard" aria-label="Second Innings live scoreboard">
+        <div class="scoreboard-bar">
+          <span class="scoreboard-tag">● LIVE</span>
+          <span class="scoreboard-title">Second Innings — Season Scorecard</span>
+        </div>
+        <div class="scoreboard-grid">
+          <div class="score-cell">
+            <span class="score-num" data-count="8">0</span>
+            <span class="score-label">Mentors on the Team Sheet</span>
+          </div>
+          <div class="score-cell">
+            <span class="score-num" data-count="0">0</span>
+            <span class="score-label">Sessions Played</span>
+          </div>
+          <div class="score-cell">
+            <span class="score-num" data-count="8">0</span>
+            <span class="score-label">Homes in the League</span>
+          </div>
+          <div class="score-cell">
+            <span class="score-num" data-count="8">0</span>
+            <span class="score-label">Skills in the Squad</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works">
+      <p class="section-eyebrow">How it works</p>
+      <h2 class="section-title">Three overs, start to finish.</h2>
+      <div class="overs-grid">
+        <div class="over-card">
+          <span class="over-tag">Over 1</span>
+          <h3>Pick your mentor</h3>
+          <p>Browse the squad by skill — from Carnatic music to Chettinad cooking. Find someone whose craft speaks to you.</p>
+        </div>
+        <div class="over-card">
+          <span class="over-tag">Over 2</span>
+          <h3>Book your session</h3>
+          <p>Choose online or in person, pick a date that works, and confirm in under a minute. No middlemen, no fuss.</p>
+        </div>
+        <div class="over-card">
+          <span class="over-tag">Over 3</span>
+          <h3>Learn from a lifetime</h3>
+          <p>Show up and learn a skill someone spent forty years mastering. Leave with more than you came for.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-mentors">
+      <div class="section-head-row">
+        <div>
+          <p class="section-eyebrow">Featured on the team sheet</p>
+          <h2 class="section-title">Meet a few of the squad.</h2>
+        </div>
+        <a href="#explore" class="text-link" data-nav>See everyone &rarr;</a>
+      </div>
+      <div class="mentor-grid" id="featured-mentor-grid"></div>
+    </section>
+
+  </section>
+
+  <!-- ============ EXPLORE ============ -->
+  <section class="page" id="page-explore" data-page="explore">
+    <div class="page-header">
+      <p class="section-eyebrow">The Squad</p>
+      <h1 class="section-title">Every mentor on the team sheet.</h1>
+      <p class="page-sub">Search by name or skill, or filter by category to find your next lesson.</p>
     </div>
 
-    <!-- Signature element: Scoreboard -->
-    <div class="scoreboard" aria-label="Impact scoreboard">
-      <div class="scoreboard-header">
-        <span class="sb-dot"></span> LIVE IMPACT SCORE
+    <div class="explore-controls">
+      <div class="search-wrap">
+        <input type="search" id="mentor-search" placeholder="Search by name or skill — try &quot;music&quot; or &quot;Kamala&quot;" aria-label="Search mentors">
       </div>
-      <div class="scoreboard-grid">
-        <div class="sb-stat">
-          <span class="sb-num" id="statMentors">0</span>
-          <span class="sb-label">Mentors Batting</span>
-        </div>
-        <div class="sb-stat">
-          <span class="sb-num" id="statSessions">0</span>
-          <span class="sb-label">Sessions Played</span>
-        </div>
-        <div class="sb-stat">
-          <span class="sb-num" id="statHomes">0</span>
-          <span class="sb-label">Homes on the Team</span>
-        </div>
-        <div class="sb-stat">
-          <span class="sb-num" id="statSkills">0</span>
-          <span class="sb-label">Skills in the Squad</span>
-        </div>
+      <div class="chip-row" id="skill-chips" role="group" aria-label="Filter by skill"></div>
+    </div>
+
+    <div class="mentor-grid" id="explore-mentor-grid"></div>
+    <p class="empty-state" id="explore-empty" hidden>No one on the team sheet matches that search. Try a different skill or name.</p>
+  </section>
+
+  <!-- ============ PROFILE ============ -->
+  <section class="page" id="page-profile" data-page="profile">
+    <div id="profile-view"></div>
+  </section>
+
+  <!-- ============ REGISTER ============ -->
+  <section class="page" id="page-register" data-page="register">
+    <div class="page-header">
+      <p class="section-eyebrow">Join the league</p>
+      <h1 class="section-title">Register an old age home.</h1>
+      <p class="page-sub">Tell us about your home and the residents who'd like a place on the team sheet. Our team will reach out to set up their profile.</p>
+    </div>
+
+    <div class="form-shell">
+      <div class="success-banner" id="register-success" hidden>
+        <strong>Added to the team sheet!</strong> Thank you — we'll be in touch shortly to set up the resident's profile.
       </div>
+
+      <form id="register-form" novalidate>
+        <fieldset>
+          <legend>About the home</legend>
+          <div class="form-row">
+            <label for="homeName">Home name</label>
+            <input type="text" id="homeName" name="homeName" required>
+          </div>
+          <div class="form-row form-row-split">
+            <div>
+              <label for="contactPerson">Contact person</label>
+              <input type="text" id="contactPerson" name="contactPerson" required>
+            </div>
+            <div>
+              <label for="contactPhone">Contact phone</label>
+              <input type="tel" id="contactPhone" name="contactPhone" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="homeCity">City</label>
+            <input type="text" id="homeCity" name="homeCity" required>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>About the resident</legend>
+          <div class="form-row form-row-split">
+            <div>
+              <label for="residentName">Resident name</label>
+              <input type="text" id="residentName" name="residentName" required>
+            </div>
+            <div>
+              <label for="residentAge">Resident age</label>
+              <input type="number" id="residentAge" name="residentAge" min="50" max="110" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="residentSkill">Skill category</label>
+            <select id="residentSkill" name="residentSkill" required>
+              <option value="" disabled selected>Select a skill</option>
+              <option>Cooking</option>
+              <option>Tailoring</option>
+              <option>Music</option>
+              <option>Tuition</option>
+              <option>Storytelling</option>
+              <option>Language</option>
+              <option>Gardening</option>
+              <option>Crafts</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="residentBio">A little about them</label>
+            <textarea id="residentBio" name="residentBio" rows="4" placeholder="What do they love teaching? How long have they practiced this skill?" required></textarea>
+          </div>
+          <div class="form-row">
+            <label for="residentPhoto">Resident photo</label>
+            <input type="file" id="residentPhoto" name="residentPhoto" accept="image/*">
+            <p class="field-hint">Photo upload is illustrative in this demo — nothing is stored or sent yet.</p>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn btn-primary">Add to the team sheet</button>
+      </form>
     </div>
   </section>
 
-  <section class="how-it-works">
-    <p class="section-eyebrow">How it works</p>
-    <h2 class="section-title">Three overs to a new skill</h2>
-    <div class="steps-grid">
-      <div class="step-card">
-        <span class="step-over">Over 1</span>
-        <h3>Pick your mentor</h3>
-        <p>Browse elders by skill — cooking, music, craft, language, tuition — and read their story.</p>
-      </div>
-      <div class="step-card">
-        <span class="step-over">Over 2</span>
-        <h3>Book a session</h3>
-        <p>Choose a slot, online or in person at the home. Free, or a small token amount — mentor's choice.</p>
-      </div>
-      <div class="step-card">
-        <span class="step-over">Over 3</span>
-        <h3>Learn, and leave a review</h3>
-        <p>Walk away with a real skill. Your review helps the mentor get picked for the next match.</p>
-      </div>
+  <!-- ============ ABOUT ============ -->
+  <section class="page" id="page-about" data-page="about">
+    <div class="page-header">
+      <p class="section-eyebrow">About</p>
+      <h1 class="section-title">The game isn't over at retirement.</h1>
     </div>
-  </section>
 
-  <section class="featured-strip">
-    <p class="section-eyebrow">This week's opening batch</p>
-    <h2 class="section-title">Meet a few mentors</h2>
-    <div class="mentor-grid" id="featuredMentors"></div>
-    <div class="center-btn">
-      <a href="#explore" class="btn btn-outline" data-nav="explore">See the full squad →</a>
+    <div class="about-body">
+      <p>Second Innings started with a simple observation: old age homes are full of people who spent forty, fifty, sixty years mastering a craft — and almost no one ever asks them to teach it again. Retirement ends a career. It doesn't end a skill.</p>
+      <p>In cricket, a team doesn't stop playing when the first innings ends — it comes back stronger, adjusts its line-up, and often plays its best cricket the second time around. We borrowed that idea on purpose. The residents on our team sheet aren't case studies or charity cases. They're mentors: people with a batting order full of decades of experience, ready to pass it on to anyone willing to learn.</p>
+      <p>Every session booked through Second Innings puts a resident back in the game — not as someone being cared for, but as someone teaching, being paid respect and often being paid outright, and staying connected to a world that too often stops calling once someone moves into a home.</p>
     </div>
-  </section>
-
-</section>
-
-<!-- ===== EXPLORE MENTORS ===== -->
-<section id="explore" class="view">
-  <div class="page-head">
-    <p class="section-eyebrow">The Squad</p>
-    <h2 class="section-title">Explore Mentors</h2>
-    <p class="page-sub">Every card here is someone with decades of practice, ready to coach.</p>
-  </div>
-
-  <div class="explore-controls">
-    <input type="search" id="searchInput" placeholder="Search by name or skill…" aria-label="Search mentors">
-    <div class="filter-chips" id="filterChips">
-      <button class="chip active" data-filter="all">All</button>
-      <button class="chip" data-filter="Cooking">Cooking</button>
-      <button class="chip" data-filter="Tailoring">Tailoring</button>
-      <button class="chip" data-filter="Music">Music</button>
-      <button class="chip" data-filter="Tuition">Tuition</button>
-      <button class="chip" data-filter="Storytelling">Storytelling</button>
-      <button class="chip" data-filter="Language">Language</button>
-      <button class="chip" data-filter="Gardening">Gardening</button>
-      <button class="chip" data-filter="Crafts">Crafts</button>
-    </div>
-  </div>
-
-  <div class="mentor-grid" id="allMentors"></div>
-  <p class="empty-state" id="emptyState" hidden>No mentors match that search — try a different skill or name.</p>
-</section>
-
-<!-- ===== MENTOR PROFILE (modal-like view) ===== -->
-<section id="profile" class="view">
-  <button class="back-link" data-nav="explore">← Back to all mentors</button>
-  <div class="profile-wrap" id="profileContent"><!-- injected by JS --></div>
-</section>
-
-<!-- ===== REGISTER OLD AGE HOME ===== -->
-<section id="register" class="view">
-  <div class="page-head">
-    <p class="section-eyebrow">Join the Team</p>
-    <h2 class="section-title">Register an Old Age Home</h2>
-    <p class="page-sub">Tell us about a resident who has a skill worth teaching. We'll help set up their mentor profile.</p>
-  </div>
-
-  <form class="form-card" id="registerForm">
-    <div class="form-row">
-      <label for="homeName">Old Age Home Name</label>
-      <input type="text" id="homeName" required placeholder="e.g. Shanthi Nivas Elder Care">
-    </div>
-    <div class="form-row two-col">
-      <div>
-        <label for="contactPerson">Contact Person</label>
-        <input type="text" id="contactPerson" required placeholder="Warden / Coordinator name">
-      </div>
-      <div>
-        <label for="contactPhone">Phone Number</label>
-        <input type="tel" id="contactPhone" required placeholder="+91 XXXXX XXXXX">
-      </div>
-    </div>
-    <div class="form-row">
-      <label for="homeCity">City</label>
-      <input type="text" id="homeCity" required placeholder="e.g. Tiruchirappalli">
-    </div>
-    <hr class="form-divider">
-    <p class="form-note">Resident / Mentor details</p>
-    <div class="form-row two-col">
-      <div>
-        <label for="residentName">Resident's Name</label>
-        <input type="text" id="residentName" required placeholder="e.g. Kamala Devi">
-      </div>
-      <div>
-        <label for="residentAge">Age</label>
-        <input type="number" id="residentAge" required min="50" max="110" placeholder="e.g. 72">
-      </div>
-    </div>
-    <div class="form-row">
-      <label for="residentSkill">Skill Category</label>
-      <select id="residentSkill" required>
-        <option value="" disabled selected>Choose a skill category</option>
-        <option>Cooking</option>
-        <option>Tailoring</option>
-        <option>Music</option>
-        <option>Tuition</option>
-        <option>Storytelling</option>
-        <option>Language</option>
-        <option>Gardening</option>
-        <option>Crafts</option>
-      </select>
-    </div>
-    <div class="form-row">
-      <label for="residentBio">Short Bio</label>
-      <textarea id="residentBio" rows="3" required placeholder="What do they teach, and what's their story?"></textarea>
-    </div>
-    <div class="form-row">
-      <label for="residentPhoto">Photo (optional, for demo — not uploaded anywhere)</label>
-      <input type="file" id="residentPhoto" accept="image/*">
-    </div>
-    <button type="submit" class="btn btn-primary btn-block">Submit Registration</button>
-    <p class="form-hint">This is a demo form. Submissions are shown on-screen only — no data leaves your browser yet.</p>
-  </form>
-
-  <div class="success-banner" id="registerSuccess" hidden>
-    <h3>🏏 Registration received!</h3>
-    <p id="registerSuccessText"></p>
-  </div>
-</section>
-
-<!-- ===== ABOUT ===== -->
-<section id="about" class="view">
-  <div class="page-head">
-    <p class="section-eyebrow">The Story</p>
-    <h2 class="section-title">Why "Second Innings"</h2>
-  </div>
-
-  <div class="about-content">
-    <p>Most platforms for old age homes ask you to donate. Second Innings asks you to <em>enrol</em>.</p>
-    <p>Inside almost every old age home is someone who spent forty years running a tailoring shop, teaching a classroom, singing at weddings, or perfecting a pickle recipe passed down three generations. Retirement — and often, family circumstance — moved them into care. It didn't erase what they know.</p>
-    <p>We borrowed the language of cricket on purpose. A batter's first innings ends, but the game isn't over — there's always a second one, and sometimes it's the one people remember. That's the frame we want for ageing: not decline, but a change of ends.</p>
-    <p>So instead of a donation button, Second Innings gives residents a mentor profile, a skill, and a booking calendar — and gives you a real reason to visit an old age home: to learn something you can't learn anywhere else.</p>
 
     <div class="impact-row">
-      <div class="impact-item">
-        <span class="impact-num">32</span>
-        <span class="impact-label">Mentors onboarded</span>
+      <div class="impact-stat">
+        <span class="impact-num">8</span>
+        <span class="impact-label">Homes across Tamil Nadu</span>
       </div>
-      <div class="impact-item">
-        <span class="impact-num">148</span>
-        <span class="impact-label">Sessions completed</span>
+      <div class="impact-stat">
+        <span class="impact-num">8</span>
+        <span class="impact-label">Skills kept alive</span>
       </div>
-      <div class="impact-item">
-        <span class="impact-num">9</span>
-        <span class="impact-label">Partner homes</span>
+      <div class="impact-stat">
+        <span class="impact-num">40+</span>
+        <span class="impact-label">Years of experience, on average</span>
       </div>
-      <div class="impact-item">
-        <span class="impact-num">4.9★</span>
-        <span class="impact-label">Average mentor rating</span>
-      </div>
-    </div>
-    <p class="impact-disclaimer">(Illustrative numbers for this demo — will reflect live data once connected to a backend.)</p>
-  </div>
-</section>
-
-<!-- ===== CONTACT ===== -->
-<section id="contact" class="view">
-  <div class="page-head">
-    <p class="section-eyebrow">Get in touch</p>
-    <h2 class="section-title">Contact Us</h2>
-  </div>
-
-  <div class="contact-wrap">
-    <form class="form-card" id="contactForm">
-      <div class="form-row">
-        <label for="cName">Name</label>
-        <input type="text" id="cName" required>
-      </div>
-      <div class="form-row">
-        <label for="cEmail">Email</label>
-        <input type="email" id="cEmail" required>
-      </div>
-      <div class="form-row">
-        <label for="cMessage">Message</label>
-        <textarea id="cMessage" rows="4" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-    </form>
-
-    <div class="contact-info">
-      <h3>Reach us directly</h3>
-      <p>📍 Tiruchirappalli, Tamil Nadu, India</p>
-      <p>✉️ hello@secondinnings.org</p>
-      <p>📞 +91 00000 00000</p>
-      <div class="social-links">
-        <a href="#" aria-label="LinkedIn">LinkedIn</a>
-        <a href="#" aria-label="Instagram">Instagram</a>
-        <a href="#" aria-label="Twitter">Twitter</a>
+      <div class="impact-stat">
+        <span class="impact-num">1</span>
+        <span class="impact-label">Second innings, for everyone</span>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="success-banner" id="contactSuccess" hidden>
-    <h3>📮 Message sent!</h3>
-    <p>Thanks for reaching out — we'll get back to you soon.</p>
-  </div>
-</section>
+  <!-- ============ CONTACT ============ -->
+  <section class="page" id="page-contact" data-page="contact">
+    <div class="page-header">
+      <p class="section-eyebrow">Contact</p>
+      <h1 class="section-title">Get in touch with the pavilion.</h1>
+      <p class="page-sub">Questions, partnership ideas, or press enquiries — we read everything that comes in.</p>
+    </div>
+
+    <div class="contact-shell">
+      <div class="form-shell">
+        <div class="success-banner" id="contact-success" hidden>
+          <strong>Message received!</strong> We'll get back to you within a couple of days.
+        </div>
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <label for="contactName">Name</label>
+            <input type="text" id="contactName" name="name" required>
+          </div>
+          <div class="form-row">
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" name="email" required>
+          </div>
+          <div class="form-row">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+      </div>
+
+      <aside class="contact-info">
+        <h3>Straight to the point</h3>
+        <p><strong>Email</strong><br><a href="mailto:hello@secondinnings.org">hello@secondinnings.org</a></p>
+        <p><strong>Phone</strong><br><a href="tel:+914400000000">+91 44 0000 0000</a></p>
+        <p><strong>Based in</strong><br>Chennai, Tamil Nadu</p>
+        <div class="social-row">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="YouTube">YouTube</a>
+        </div>
+      </aside>
+    </div>
+  </section>
 
 </main>
 
-<!-- ===== BOOKING MODAL ===== -->
-<div class="modal-overlay" id="bookingModal" hidden>
-  <div class="modal-card">
-    <button class="modal-close" id="modalClose" aria-label="Close">×</button>
-    <h3>Book a session with <span id="bookMentorName"></span></h3>
-    <form id="bookingForm">
-      <div class="form-row">
-        <label for="bName">Your Name</label>
-        <input type="text" id="bName" required>
-      </div>
-      <div class="form-row">
-        <label for="bEmail">Email</label>
-        <input type="email" id="bEmail" required>
-      </div>
-      <div class="form-row two-col">
-        <div>
-          <label for="bDate">Date</label>
-          <input type="date" id="bDate" required>
-        </div>
-        <div>
-          <label for="bMode">Mode</label>
-          <select id="bMode" required>
-            <option value="Online">Online</option>
-            <option value="In-person">In-person at the home</option>
-          </select>
-        </div>
-      </div>
-      <button type="submit" class="btn btn-primary btn-block">Confirm Booking</button>
-    </form>
-    <div class="booking-success" id="bookingSuccess" hidden>
-      <h4>🎉 You're on the team sheet!</h4>
-      <p id="bookingSuccessText"></p>
-    </div>
-  </div>
-</div>
-
-<!-- ===== FOOTER ===== -->
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <span class="logo-mark">SI</span>
-      <span class="logo-text">Second Innings</span>
+      <span class="brand-mark">SI</span>
+      <span>Second Innings</span>
     </div>
-    <p>Every innings deserves a second chance. Built for elders who still have plenty to teach.</p>
-    <p class="footer-copy">© 2026 Second Innings. A community skill-exchange demo.</p>
+    <p>Every innings deserves a second chance.</p>
+    <nav class="footer-nav">
+      <a href="#home" data-nav>Home</a>
+      <a href="#explore" data-nav>The Squad</a>
+      <a href="#register" data-nav>Register a Home</a>
+      <a href="#about" data-nav>About</a>
+      <a href="#contact" data-nav>Contact</a>
+    </nav>
+    <p class="footer-copy">&copy; 2026 Second Innings. A community project, not (yet) a company.</p>
   </div>
 </footer>
+
+<!-- ============ BOOKING MODAL ============ -->
+<div class="modal-overlay" id="booking-modal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="booking-title">
+    <button class="modal-close" id="modal-close" aria-label="Close booking form">&times;</button>
+
+    <div id="booking-form-view">
+      <p class="section-eyebrow">Book a session</p>
+      <h2 id="booking-title">with <span id="booking-mentor-name">—</span></h2>
+      <form id="booking-form" novalidate>
+        <input type="hidden" id="bookingMentorId" name="mentorId">
+        <div class="form-row">
+          <label for="bookingName">Your name</label>
+          <input type="text" id="bookingName" name="name" required>
+        </div>
+        <div class="form-row">
+          <label for="bookingEmail">Your email</label>
+          <input type="email" id="bookingEmail" name="email" required>
+        </div>
+        <div class="form-row form-row-split">
+          <div>
+            <label for="bookingDate">Date</label>
+            <input type="date" id="bookingDate" name="date" required>
+          </div>
+          <div>
+            <label for="bookingMode">Mode</label>
+            <select id="bookingMode" name="mode" required>
+              <option>Online</option>
+              <option>In-person</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Confirm booking</button>
+      </form>
+    </div>
+
+    <div id="booking-confirm-view" hidden>
+      <p class="section-eyebrow">You're in the batting order</p>
+      <h2>Booking confirmed!</h2>
+      <p id="booking-confirm-text"></p>
+      <button class="btn btn-primary" id="booking-done-btn">Done</button>
+    </div>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
