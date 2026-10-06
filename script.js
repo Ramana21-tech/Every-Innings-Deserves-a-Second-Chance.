@@ -1,4 +1,4 @@
-/* Second Innings — single-page app, state persisted in localStorage */
+
 (() => {
   'use strict';
 
